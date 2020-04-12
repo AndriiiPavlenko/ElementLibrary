@@ -5,7 +5,8 @@
 #include <QGraphicsScene>
 #include <QMessageBox>
 
-#include <mypoint.h>
+#include "Element.h"
+#include "elemtext.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -27,8 +28,10 @@ private:
     Ui::CreatLib *ui;
 
     QGraphicsScene  *scene;      // Объявляем графическую сцену и Точку с которой будем работать
-    MyPoint         *point;
-
+    Element         *pElement;
+    ElemText        *pElementText;
+    //ElemText        *pElementText1;
+    //ElemText        *pElementText2;
 
 };
 #endif // CREATLIB_H
